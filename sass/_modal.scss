@@ -1,0 +1,38 @@
+/** @format */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(25, 28, 38, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform var(--transition);
+}
+
+.modal {
+  padding: 16px;
+  background: white;
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px;
+  height: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.is-hidden {
+  transform: scale(1.1);
+  visibility: hidden;
+}
+.close-button {
+  outline: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
