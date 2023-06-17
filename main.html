@@ -248,7 +248,86 @@
       </section>
       <section data-modal class="backdrop is-hidden">
         <div class="modal">
-          <button data-modal-close class="close-button">close</button>
+          <button data-modal-close class="close-button">&times;</button>
+          <form class="form-modal" action="#">
+            <span>Leave your information and we'll call you back</span>
+            <label class="form-modal__label">
+              <span class="form-modal__text">Name</span>
+              <input
+                class="form-modal__input"
+                type="text"
+                name="username"
+                placeholder="Ian Somerhalder"
+                required
+              />
+              <svg class="form-modal__icon">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label class="form-modal__label">
+              <span class="form-modal__text">Telephone</span>
+              <input
+                class="form-modal__input"
+                type="tel"
+                name="tel"
+                placeholder="123-4567-8901"
+                required
+              />
+              <svg class="form-modal__icon">
+                <use href="./images/symbol-defs.svg#form-icon2"></use>
+              </svg>
+            </label>
+            <label class="form-modal__label">
+              <span class="form-modal__text">E-mail</span>
+              <input
+                class="form-modal__input"
+                type="email"
+                name="email"
+                placeholder="sophie@example.com"
+                minlength="3"
+                maxlength="64"
+                required
+              />
+              <svg class="form-modal__icon">
+                <use href="./images/symbol-defs.svg#form-icon3"></use>
+              </svg>
+            </label>
+            <label class="form-modal__label">
+              <span class="form-modal__text">Comments</span>
+              <textarea
+                class="form-modal__input"
+                type="text"
+                name="comments"
+                rows="3"
+                placeholder="Enter the text"
+              ></textarea>
+            </label>
+
+            <button class="form-modal__submit-button" type="submit">
+              Send
+            </button>
+            <picture class="modal__pic">
+              <!--Desktop-->
+              <source
+                media="min-width:1200px"
+                srcset="images/icecream1.webp 1x, images/icecream1@2x.webp 2x"
+              />
+              <!--Tablet-->
+              <source
+                media="min-width:768px"
+                srcset="images/icecream1.webp 1x, images/icecream1@2x.webp 2x"
+              />
+              <!--Mobile-->
+              <source
+                srcset="images/icecream1.webp 1x, images/icecream1@2x.webp 2x"
+              />
+              <img
+                class="modal__resize-pic"
+                src="./images/icecream1.webp"
+                alt="milk"
+              />
+            </picture>
+          </form>
         </div>
       </section>
     </header>

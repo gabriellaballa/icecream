@@ -1,3 +1,5 @@
+/** @format */
+
 (() => {
   const refs = {
     openModalBtn: document.querySelectorAll("[data-modal-open]"),
